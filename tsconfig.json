@@ -16,9 +16,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/theme/*": ["./src/theme/*"],
+      "@/icons/*": ["./src/icons/*"],
+      "@/layout/*": ["src/layout/*"],
+      "@/hooks/*": ["./src/hooks/*"]
+    },
+    "types": ["node", "@types/jest", "jest-playwright-preset"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types/*"],
   "exclude": ["node_modules"]
 }
